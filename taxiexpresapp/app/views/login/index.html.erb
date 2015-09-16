@@ -1,0 +1,10 @@
+<center><div>
+<h1>Ingresar al Sistema</h1>
+<%= form_tag("/create", method: "post") do %>
+  <%= label_tag(:usuario, "Usuario:") %>
+  <%= text_field_tag(:usuario) %><br/>
+  <%= label_tag(:password, "Contraseña:") %>
+  <%= password_field_tag(:password) %><br/>
+  <%= submit_tag("Ingresar") %>
+<% end %>
+</div></center>
